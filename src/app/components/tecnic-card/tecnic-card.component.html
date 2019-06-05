@@ -1,0 +1,21 @@
+<ion-card class="tecnic-card">
+  <ion-card-header>
+    <ion-item detail="false" lines="none">
+      <ion-avatar slot="start">
+        <ion-icon name="person"></ion-icon>
+      </ion-avatar>
+      El Tecnico <br />
+      Instalación de Cámaras
+    </ion-item>
+  </ion-card-header>
+  <ion-card-content>
+    
+    <ion-row>
+      <div *ngFor="let n of [0,1,2,3,4]" class="Stars-Tecnic">
+        <ion-icon name="star" class="stars"></ion-icon>
+      </div>
+    </ion-row>
+    Teléfono: 268-7652 <br />
+    Dirección: Calle 4 #8-96 Cali
+  </ion-card-content>
+</ion-card>
