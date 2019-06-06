@@ -1,9 +1,54 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>tecnic-detail</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>El Tecnico</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+
+<ion-content class="ion-padding">
+  <ion-row>
+    <ion-col size="6">
+      <img
+        src="https://static.platzi.com/media/tmp/class-files/git/curso-flutter-platzi/Curso-de-Flutter-en-Platzi-6.ImagenRedonda/platzi_trips_app/assets/img/people.jpg"
+        alt="">
+    </ion-col>
+    <ion-col size="6">
+      <div class="ion-justufy-content-center ion-margin-start">
+        <p>Un servicio</p>
+        <p>Otro Servicio</p>
+        <ion-button>
+          <ion-icon slot="start" name="call"></ion-icon>
+          Contactar
+        </ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+  <h3>Titulos</h3>
+  <ion-slides pager="false" scrollbar="ios">
+    <ion-slide>
+      <img
+        src="https://i2.wp.com/www.escuelahosteleriasalamanca.es/wp-content/uploads/2015/09/T%C3%ADtulo-T%C3%A9cnico-en-Cocina-y-Gastronom%C3%ADa.jpg?fit=2910%2C2226&ssl=1"
+        alt="">
+    </ion-slide>
+    <ion-slide>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0bRq5yEpGxahDF2IDn-dohzNATg9y3wYLMbnSN6cePQN9zPh"
+        alt="">
+    </ion-slide>
+    <ion-slide>
+      <img
+        src="https://i2.wp.com/www.escuelahosteleriasalamanca.es/wp-content/uploads/2015/09/T%C3%ADtulo-T%C3%A9cnico-en-Cocina-y-Gastronom%C3%ADa.jpg?fit=2910%2C2226&ssl=1"
+        alt="">
+    </ion-slide>
+  </ion-slides>
+
+  <rating [(ngModel)]="rate" size="large" (ngModelChange)="onModelChange($event)" >
+
+  </rating>
+
 
 </ion-content>

@@ -1,8 +1,8 @@
 <ion-card class="tecnic-card">
   <ion-card-header>
-    <ion-item detail="false" lines="none">
+    <ion-item detail="false" lines="none" routerLink="/tecnic-detail/1">
       <ion-avatar slot="start">
-        <ion-icon name="person"></ion-icon>
+        <img src="https://i2.wp.com/www.escuelahosteleriasalamanca.es/wp-content/uploads/2015/09/T%C3%ADtulo-T%C3%A9cnico-en-Cocina-y-Gastronom%C3%ADa.jpg?fit=2910%2C2226&ssl=1" alt="">
       </ion-avatar>
       El Tecnico <br />
       Instalación de Cámaras
@@ -11,7 +11,7 @@
   <ion-card-content>
     
     <ion-row>
-      <div *ngFor="let n of [0,1,2,3,4]" class="Stars-Tecnic">
+      <div *ngFor="let n of [0,1,2,3,4]" class="stars-tecnic">
         <ion-icon name="star" class="stars"></ion-icon>
       </div>
     </ion-row>

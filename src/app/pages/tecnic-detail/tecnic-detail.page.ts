@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tecnic-detail.page.scss'],
 })
 export class TecnicDetailPage implements OnInit {
-
+  rate = 4;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onModelChange(event){
+    this.rate = event;
   }
 
 }

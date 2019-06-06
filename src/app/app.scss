@@ -4,3 +4,17 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
+.stars-tecnic {
+    justify-content: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.stars{    
+    color: gold;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;    
+}
