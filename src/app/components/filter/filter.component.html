@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="dismiss()">
+        Cancelar
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Filtros</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button strong>
+        Listo
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="filtros">
+  <ion-item>
+    <ion-label>Departamento</ion-label>
+    <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Selecciona un Departamento">
+      <ion-select-option value="valle">Valle del Cauca</ion-select-option>
+      <ion-select-option value="bogota">Bogotá</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Municipio</ion-label>
+    <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Selecciona un Municipio">
+      <ion-select-option value="cali">Cali</ion-select-option>
+      <ion-select-option value="buga">Buga</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Servicio</ion-label>
+    <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Selecciona un Departamento">
+      <ion-select-option value="camaras">Instalación de Cámaras</ion-select-option>
+      <ion-select-option value="red">Instalación de Red</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-content>

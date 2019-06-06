@@ -1,3 +1,4 @@
+import { FilterComponent } from './../components/filter/filter.component';
 import { TecnicCardComponent } from './../components/tecnic-card/tecnic-card.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -12,7 +13,7 @@ import { HomePage } from './home.page';
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,    
+    IonicModule,
     RouterModule.forChild([
       {
         path: '',
@@ -20,6 +21,13 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage, TecnicCardComponent]
+  declarations: [
+    HomePage,
+    TecnicCardComponent,
+    FilterComponent
+  ],
+  entryComponents: [
+    FilterComponent
+  ]
 })
 export class HomePageModule {}
