@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { TecnicService } from './../../services/tecnic.service';
+import { Technical } from './../../interfaces/tecnico';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tecnic-card',
@@ -6,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tecnic-card.component.scss'],
 })
 export class TecnicCardComponent implements OnInit {
+  @Input() id: string;
+  technical: Technical;
 
-  constructor() { }
+  constructor(
+    private technicalService: TecnicService
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.id);
+    this.technicalService.getTechnicalById(this.id).valueChanges().subscribe(
+      (data: Technical) => {
+        console.log(data);
+        this.technical = data;
+      }, (error) => {
+        console.error(error);
+      });
+
+  }
 
 }

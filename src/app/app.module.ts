@@ -11,6 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { IonicRatingModule } from 'ionic4-rating';
 
+import { AngularFireModule } from '@angular/fire';
+import { firebaseConfig } from '../environment';
+
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -18,7 +24,10 @@ import { IonicRatingModule } from 'ionic4-rating';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    IonicRatingModule
+    IonicRatingModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireStorageModule
   ],
   providers: [
     StatusBar,

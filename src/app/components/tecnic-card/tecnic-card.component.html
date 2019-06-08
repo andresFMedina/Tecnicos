@@ -1,11 +1,11 @@
-<ion-card class="tecnic-card">
+<ion-card class="tecnic-card" *ngIf="technical">
   <ion-card-header>
     <ion-item detail="false" lines="none" routerLink="/tecnic-detail/1">
       <ion-avatar slot="start">
         <img src="https://i2.wp.com/www.escuelahosteleriasalamanca.es/wp-content/uploads/2015/09/T%C3%ADtulo-T%C3%A9cnico-en-Cocina-y-Gastronom%C3%ADa.jpg?fit=2910%2C2226&ssl=1" alt="">
       </ion-avatar>
-      El Tecnico <br />
-      Instalación de Cámaras
+      {{technical.nombre}} <br />
+      {{technical.servicio[0]}}
     </ion-item>
   </ion-card-header>
   <ion-card-content>
@@ -15,7 +15,7 @@
         <ion-icon name="star" class="stars"></ion-icon>
       </div>
     </ion-row>
-    Teléfono: 268-7652 <br />
-    Dirección: Calle 4 #8-96 Cali
+    Teléfono: {{technical.telefono}} <br />
+    Dirección: {{technical.direccion}} Cali
   </ion-card-content>
 </ion-card>

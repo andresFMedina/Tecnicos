@@ -13,5 +13,10 @@
 
 <ion-content class="ion-padding">  
     Filtro Seleccionado
-    <app-tecnic-card></app-tecnic-card>  
+    <div *ngIf="technicals">
+    <div *ngFor="let technical of technicals">
+        <app-tecnic-card [id]="technical.id"></app-tecnic-card>  
+    </div>
+  </div>
+    
 </ion-content>

@@ -1,5 +1,7 @@
 {
   "name": "tecnapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
